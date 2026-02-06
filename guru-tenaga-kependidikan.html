@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Guru & Tenaga Kependidikan - SMA Raden Rahmat Balongbendo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- boot -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- lightslider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        /* Enhanced Hero Section */
+        .hero-section {
+            margin-top: 120px;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+            animation: floatBackground 20s linear infinite;
+        }
+
+        @keyframes floatBackground {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Teacher Stats */
+        .stats-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .stat-card:hover::before {
+            left: 100%;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            color: #764ba2;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Teacher Grid */
+        .teachers-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .teacher-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .teacher-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .teacher-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .teacher-card:hover .teacher-image img {
+            transform: scale(1.1);
+        }
+
+        .teacher-info {
+            padding: 25px;
+        }
+
+        .teacher-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .teacher-position {
+            font-size: 1.1rem;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .teacher-subject {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .teacher-qualification {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .teacher-contact {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .teacher-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f8f9fa;
+            color: #6c757d;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Animation Classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+
+        .zoom-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-top {
+            opacity: 0;
+            transform: translateY(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
+        .delay-8 { animation-delay: 0.8s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section .subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid,
+            .teachers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .stats-section,
+            .teachers-section {
+                padding: 40px 0;
+            }
+
+            .teacher-image img {
+                height: 250px;
+            }
+        }
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbarKu fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo SMA Raden Rahmat Balongbendo">
+                <h1>SMA RADEN RAHMAT<br>BALONGBENDO</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                            href="#"
+                            class="nav-link dropdown-toggle"
+                            id="dropdownProfilSekolah"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Profil Sekolah
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownProfilSekolah">
+                            <a class="dropdown-item" href="tentang-sekolah.html">Tentang Sekolah</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="visi-misi.html">Visi & Misi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="struktur-organisasi.html">Struktur Organisasi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="guru-tenaga-kependidikan.html">
+                                Guru & Tenaga Kependidikan
+                            </a>
+                        </div>
+                    </li>
+
+                     <li class="nav-item dropdown">
+                        <a href="#"
+                        class="nav-link dropdown-toggle"
+                        id="dropdownAkademik"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                            Akademik
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownAkademik">
+                            <a class="dropdown-item" href="kurikulum.html">Kurikulum</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="program-unggulan.html">Program Unggulan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="kalender-akademik.html">Kalender Akademik</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#"
+                        class="nav-link dropdown-toggle"
+                        id="dropdownKesiswaan"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                            Kesiswaan
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownKesiswaan">
+                            <a class="dropdown-item" href="ekstrakurikuler.html">Ekstrakurikuler</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="prestasi-siswa.html">Prestasi Siswa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="tata-tertib.html">Tata Tertib</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="organisasi-siswa.html">Organisasi Siswa</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a href="#"
+                        class="nav-link dropdown-toggle"
+                        id="dropdownInformasi"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                            Informasi
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownInformasi">
+                            <a class="dropdown-item" href="berita.html">Berita</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="artikel.html">Artikel</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="agenda.html">Agenda</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#"
+                        class="nav-link dropdown-toggle"
+                        id="dropdownPPDB"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                            PPDB
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownPPDB">
+                            <a class="dropdown-item" href="ppdb.html">Informasi PPDB</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="alur-pendaftaran.html">Alur Pendaftaran</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="persyaratan.html">Persyaratan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="kontak-ppdb.html">Kontak PPDB</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#"
+                        class="nav-link dropdown-toggle"
+                        id="dropdownGaleri"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                            Galeri
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownGaleri">
+                            <a class="dropdown-item" href="galeri-foto.html">Galeri Foto</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="galeri-video.html">Galeri Video</a>
+                        </div>
+                    </li>
+                </ul>
+            
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="fade-in-up">Guru & Tenaga Kependidikan</h1>
+            <p class="subtitle fade-in-up delay-1">Tim Pengajar dan Pendukung Pendidikan Profesional SMA Raden Rahmat Balongbendo</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-in-up delay-1">
+                    <i class="stat-icon fas fa-chalkboard-teacher"></i>
+                    <span class="stat-number">35</span>
+                    <span class="stat-label">Guru</span>
+                </div>
+                <div class="stat-card fade-in-up delay-2">
+                    <i class="stat-icon fas fa-users-cog"></i>
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Tenaga Kependidikan</span>
+                </div>
+                <div class="stat-card fade-in-up delay-4">
+                    <i class="stat-icon fas fa-graduation-cap"></i>
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Lulus S1 & S2</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section class="teachers-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Daftar Guru</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card fade-in-up delay-1">
+                    <div class="teacher-image">
+                        <img src="images/darimun.jpeg" alt="H. M. Darimun">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">H. M. Darimun</div>
+                        <div class="teacher-position">Kepala Sekolah</div>
+                        <div class="teacher-subject">Pendidikan Agama Islam</div>
+                        <div class="teacher-qualification">S.Pd. Agama Islam, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19750101 200001 1 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-2">
+                    <div class="teacher-image">
+                        <img src="images/pelatihJerman.jpg" alt="Drs. A. S. Hidayat">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Drs. A. S. Hidayat</div>
+                        <div class="teacher-position">Wakil Kepala Sekolah 1</div>
+                        <div class="teacher-subject">Matematika</div>
+                        <div class="teacher-qualification">S.Pd. Matematika, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19780315 200502 1 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-3">
+                    <div class="teacher-image">
+                        <img src="images/basket.jpg" alt="Dra. Siti Nurjanah">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Dra. Siti Nurjanah</div>
+                        <div class="teacher-position">Wakil Kepala Sekolah 2</div>
+                        <div class="teacher-subject">Bahasa Indonesia</div>
+                        <div class="teacher-qualification">S.Pd. Bahasa Indonesia, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19800520 200801 2 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-4">
+                    <div class="teacher-image">
+                        <img src="images/pramuka.jpeg" alt="H. Jamaludin">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">H. Jamaludin</div>
+                        <div class="teacher-position">Wakil Kepala Sekolah 3</div>
+                        <div class="teacher-subject">Sejarah</div>
+                        <div class="teacher-qualification">S.Pd. Sejarah, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19820710 201001 1 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-5">
+                    <div class="teacher-image">
+                        <img src="images/esc.jpg" alt="Sri Wulandari">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Sri Wulandari</div>
+                        <div class="teacher-position">Kepala Tata Usaha</div>
+                        <div class="teacher-subject">Ekonomi</div>
+                        <div class="teacher-qualification">S.Pd. Ekonomi, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19850815 201202 2 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-6">
+                    <div class="teacher-image">
+                        <img src="images/pelatihJerman.jpg" alt="H. Djumadi">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">H. Djumadi</div>
+                        <div class="teacher-position">Bendahara Keuangan</div>
+                        <div class="teacher-subject">Akutansi</div>
+                        <div class="teacher-qualification">S.Pd. Akutansi, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19830620 201101 1 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Tenaga Kependidikan</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card fade-in-up delay-1">
+                    <div class="teacher-image">
+                        <img src="images/darimun.jpeg" alt="Dra. M. Siti Aminah">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Dra. M. Siti Aminah</div>
+                        <div class="teacher-position">Kepala Perpustakaan</div>
+                        <div class="teacher-subject">Perpustakaan & Informasi</div>
+                        <div class="teacher-qualification">S.Pd. Perpustakaan, M.Pd.</div>
+                        <div class="teacher-contact">NIP. 19880210 201402 2 001</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-2">
+                    <div class="teacher-image">
+                        <img src="images/pelatihJerman.jpg" alt="H. Ali Akbar">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">H. Ali Akbar</div>
+                        <div class="teacher-position">Ketua BKS (Badan Kerja Sama)</div>
+                        <div class="teacher-subject">Hubungan Masyarakat</div>
+                        <div class="teacher-qualification">S1 Sosial Ekonomi</div>
+                        <div class="teacher-contact">Masyarakat</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card fade-in-up delay-3">
+                    <div class="teacher-image">
+                        <img src="images/basket.jpg" alt="Siti Maryam">
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Siti Maryam</div>
+                        <div class="teacher-position">Staf Administrasi</div>
+                        <div class="teacher-subject">Administrasi Sekolah</div>
+                        <div class="teacher-qualification">D3 Manajemen Bisnis</div>
+                        <div class="teacher-contact">Kontrak</div>
+                        <div class="teacher-social">
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sosmed icon -->
+    <div class="iconBox">
+        <a href="" class="perIconBox wa">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="" class="perIconBox fb">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="" class="perIconBox ig">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="" class="perIconBox yt">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="" class="perIconBox linkin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+<!-- Modern Professional Footer - Reduced Height -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- School Information -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="text-center text-md-left">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-2">
+                            <img src="images/logo.png" alt="Logo SMA Raden Rahmat" style="width: 40px; height: 40px; margin-right: 12px;">
+                            <h3 class="text-white mb-0" style="font-size: 1.2rem;">SMA RADEN RAHMAT</h3>
+                        </div>
+                        <p class="text-white text-center text-md-left mt-1" style="font-size: 0.85rem; opacity: 0.9; line-height: 1.5;">
+                            Mendidik generasi muda dengan keunggulan akademik, karakter, dan keterampilan untuk menghadapi tantangan global
+                        </p>
+                        <div class="mt-2 text-center text-md-left">
+                            <a href="#" class="text-white mr-2" style="font-size: 1rem;">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-white mr-2" style="font-size: 1rem;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-white mr-2" style="font-size: 1rem;">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-white" style="font-size: 1rem;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h4 class="text-white mb-3 text-center text-md-left" style="font-weight: 600; font-size: 1rem;">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <a href="index.html" class="text-white" style="text-decoration: none; font-size: 0.85rem; opacity: 0.9; transition: all 0.3s ease;">
+                                <i class="fas fa-home mr-2"></i> Home
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="tentang-sekolah.html" class="text-white" style="text-decoration: none; font-size: 0.85rem; opacity: 0.9; transition: all 0.3s ease;">
+                                <i class="fas fa-info-circle mr-2"></i> Tentang Sekolah
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="visi-misi.html" class="text-white" style="text-decoration: none; font-size: 0.85rem; opacity: 0.9; transition: all 0.3s ease;">
+                                <i class="fas fa-bullseye mr-2"></i> Visi & Misi
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="ekstrakurikuler.html" class="text-white" style="text-decoration: none; font-size: 0.85rem; opacity: 0.9; transition: all 0.3s ease;">
+                                <i class="fas fa-running mr-2"></i> Ekstrakurikuler
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="galeri-foto.html" class="text-white" style="text-decoration: none; font-size: 0.85rem; opacity: 0.9; transition: all 0.3s ease;">
+                                <i class="fas fa-images mr-2"></i> Galeri
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="kontak.html" class="text-white" style="text-decoration: none; font-size: 0.85rem; opacity: 0.9; transition: all 0.3s ease;">
+                                <i class="fas fa-phone-alt mr-2"></i> Kontak
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-5">
+                    <h4 class="text-white mb-3 text-center text-md-left" style="font-weight: 600; font-size: 1rem;">Contact Information</h4>
+                    <div class="footerContactUs">
+                        <div class="perFooterContactUs mb-2">
+                            <i class="fas text-white fa-map-marker-alt mr-3"></i>
+                            <p class="text-white mb-0" style="font-size: 0.85rem; opacity: 0.9; line-height: 1.5;">
+                                Jl. Raya Balongbendo, Bakalan Wringinpitu, Kecamatan Balongbendo, Kabupaten Sidoarjo, Jawa Timur 61263
+                            </p>
+                        </div>
+                        <div class="perFooterContactUs mb-2">
+                            <i class="fas text-white fa-phone-alt mr-3"></i>
+                            <p class="text-white mb-0" style="font-size: 0.85rem; opacity: 0.9;">
+                                03199893287
+                            </p>
+                        </div>
+                        <div class="perFooterContactUs mb-2">
+                            <i class="fas text-white fa-envelope mr-3"></i>
+                            <p class="text-white mb-0" style="font-size: 0.85rem; opacity: 0.9;">
+                                sma.r.rahmat@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="row mt-4 pt-3 border-top" style="border-color: rgba(255, 255, 255, 0.1);">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="text-white mb-0" style="font-size: 0.85rem; opacity: 0.7;">
+                        <i class="far fa-copyright"></i> Copyright 2026 SMA RADEN RAHMAT. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Enhanced Footer Styles - Reduced Height */
+        .footer {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px 0 20px;
+            margin-top: 125px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .footer h4 {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 3px;
+        }
+
+        .footer a:hover {
+            opacity: 1 !important;
+            color: #667eea !important;
+            transform: translateX(5px);
+        }
+
+        .footer .footerContactUs .perFooterContactUs {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+
+        .footer .footerContactUs .perFooterContactUs i {
+            margin-top: 3px;
+            min-width: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer {
+                padding: 30px 0 15px;
+            }
+            
+            .footer .col-md-4,
+            .footer .col-md-3,
+            .footer .col-md-5 {
+                margin-bottom: 25px;
+            }
+            
+            .footer h4::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .footer h4 {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                padding: 25px 0 10px;
+            }
+            
+            .footer .d-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer .d-flex img {
+                margin-right: 0;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+
+    <script>
+        // Enhanced Scroll and Load Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation elements
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .zoom-in, .slide-in-top');
+            
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = entry.target.classList.contains('fade-in-up') ? 'translateY(0)' : 
+                                                      entry.target.classList.contains('fade-in-left') ? 'translateX(0)' :
+                                                      entry.target.classList.contains('fade-in-right') ? 'translateX(0)' :
+                                                      entry.target.classList.contains('zoom-in') ? 'scale(1)' :
+                                                      entry.target.classList.contains('slide-in-top') ? 'translateY(0)' : 'none';
+                    }
+                });
+            }, observerOptions);
+
+            // Set initial state and observe elements
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                if (el.classList.contains('fade-in-up')) {
+                    el.style.transform = 'translateY(30px)';
+                } else if (el.classList.contains('fade-in-left')) {
+                    el.style.transform = 'translateX(-30px)';
+                } else if (el.classList.contains('fade-in-right')) {
+                    el.style.transform = 'translateX(30px)';
+                } else if (el.classList.contains('zoom-in')) {
+                    el.style.transform = 'scale(0.9)';
+                } else if (el.classList.contains('slide-in-top')) {
+                    el.style.transform = 'translateY(-30px)';
+                }
+                el.style.transition = 'all 0.8s ease';
+                observer.observe(el);
+            });
+
+            // Add hover effect to teacher cards
+            const teacherCards = document.querySelectorAll('.teacher-card');
+            teacherCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeft = '4px solid #667eea';
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeft = 'none';
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Parallax effect on hero section
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('.hero-section');
+                if (parallax) {
+                    parallax.style.transform = `translateY(${scrolled * 0.3}px)`;
+                }
+            });
+
+            // Animate stat numbers
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounter(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                observer.observe(stat);
+            });
+
+            function animateCounter(element) {
+                const finalValue = element.textContent;
+                const isPlus = finalValue.includes('+');
+                const numericValue = parseInt(finalValue.replace(/[^0-9]/g, ''));
+                let currentValue = 0;
+                const increment = numericValue / 50;
+                const duration = 2000;
+                const startTime = Date.now();
+
+                function updateCounter() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                    currentValue = Math.floor(numericValue * easeOutQuart);
+
+                    if (isPlus) {
+                        element.textContent = currentValue + '+';
+                    } else if (finalValue.includes('%')) {
+                        element.textContent = currentValue + '%';
+                    } else {
+                        element.textContent = currentValue;
+                    }
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = finalValue;
+                    }
+                }
+
+                updateCounter();
+            }
+        });
+    </script>
+</body>
+
+</html>

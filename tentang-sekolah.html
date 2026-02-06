@@ -31,6 +31,312 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <style>
+        /* Custom CSS for Tentang Sekolah page */
+        .tentang-sekolah {
+            margin-top: 120px;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .tentang-sekolah h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tentang-sekolah .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .card-tentang {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            color: #333;
+        }
+
+        .card-tentang:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .card-tentang h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #667eea;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .card-tentang p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .card-tentang ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-tentang ul li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .card-tentang ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #764ba2;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 200px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .fasilitas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .fasilitas-item {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .fasilitas-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .fasilitas-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .fasilitas-item h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+
+        .fasilitas-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .akreditasi-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.3);
+        }
+
+        .sejarah-timeline {
+            position: relative;
+            padding: 40px 0;
+            margin: 50px 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: fadeInLeft 0.6s ease forwards;
+        }
+
+        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(5) { animation-delay: 0.5s; }
+
+        @keyframes fadeInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px #667eea;
+        }
+
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 25px;
+            width: 2px;
+            height: calc(100% + 15px);
+            background: #667eea;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+        }
+
+        .quote-box i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+
+        .quote-box p {
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .quote-box .author {
+            font-size: 1.1rem;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .tentang-sekolah h1 {
+                font-size: 2rem;
+            }
+
+            .tentang-sekolah .subtitle {
+                font-size: 1rem;
+            }
+
+            .card-tentang {
+                padding: 25px;
+            }
+
+            .card-tentang h3 {
+                font-size: 1.5rem;
+            }
+
+            .card-tentang p {
+                font-size: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-card {
+                min-width: 150px;
+                padding: 20px;
+            }
+
+            .fasilitas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-box {
+                padding: 30px 20px;
+            }
+
+            .quote-box p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbarKu fixed-top">
         <div class="container">
@@ -186,6 +492,154 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="tentang-sekolah">
+        <div class="container">
+            <h1>Tentang Sekolah</h1>
+            <p class="subtitle">Sejarah, Visi, dan Misi SMA Raden Rahmat Balongbendo</p>
+            
+            <!-- Statistics -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-number">2002</span>
+                    <span class="stat-label">Tahun Berdiri</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">A</span>
+                    <span class="stat-label">Akreditasi</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Komitmen Kualitas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container mt-5">
+        <!-- Sejarah -->
+        <div class="card-tentang">
+            <h3><i class="fas fa-history"></i> Sejarah SMA Raden Rahmat Balongbendo</h3>
+            <div class="sejarah-timeline">
+                <div class="timeline-item">
+                    <h4>21 Januari 2002</h4>
+                    <p>Didirikan melalui SK Pendirian No. 421.3/0308/404.3.14/2002</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Pendirian Yayasan</h4>
+                    <p>Beroperasi di bawah naungan Yayasan Raden Rahmat Balongbendo</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Visimisi Awal</h4>
+                    <p>Berkomitmen memberikan pendidikan berkualitas yang holistik</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Pengembangan</h4>
+                    <p>Beraksi aktif untuk meningkatkan mutu pendidikan setiap tahun</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Akreditasi A</h4>
+                    <p>Memperoleh akreditasi A, menunjukkan standar mutu yang sangat baik</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profil Singkat -->
+        <div class="card-tentang">
+            <h3><i class="fas fa-info-circle"></i> Profil Singkat</h3>
+            <p>SMA Raden Rahmat Balongbendo adalah sekolah menengah atas swasta yang berlokasi di Jalan Raya Balongbendo, Desa Bakalan Wringinpitu, Kecamatan Balongbendo, Kabupaten Sidoarjo, Jawa Timur 61263, Indonesia. Sekolah ini berada di bawah naungan Yayasan Raden Rahmat Balongbendo dan sejak berdirinya telah berkomitmen memberikan pendidikan berkualitas yang holistik kepada generasi muda di wilayah Sidoarjo dan sekitarnya.</p>
+            
+            <div class="akreditasi-badge">
+                <i class="fas fa-award"></i> Akreditasi A
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="card-tentang">
+            <h3><i class="fas fa-building"></i> Fasilitas Sekolah</h3>
+            <div class="fasilitas-grid">
+                <div class="fasilitas-item">
+                    <i class="fas fa-school fasilitas-icon"></i>
+                    <h4>Ruang Kelas</h4>
+                    <p>Ruang kelas yang representatif dan nyaman untuk belajar</p>
+                </div>
+                <div class="fasilitas-item">
+                    <i class="fas fa-flask fasilitas-icon"></i>
+                    <h4>Laboratorium</h4>
+                    <p>Laboratorium modern untuk praktik IPA dan kejuruan</p>
+                </div>
+                <div class="fasilitas-item">
+                    <i class="fas fa-book fasilitas-icon"></i>
+                    <h4>Perpustakaan</h4>
+                    <p>Perpustakaan dengan koleksi buku yang lengkap</p>
+                </div>
+                <div class="fasilitas-item">
+                    <i class="fas fa-wifi fasilitas-icon"></i>
+                    <h4>Internet</h4>
+                    <p>Akses internet cepat untuk pembelajaran digital</p>
+                </div>
+                <div class="fasilitas-item">
+                    <i class="fas fa-running fasilitas-icon"></i>
+                    <h4>Ruang Kegiatan</h4>
+                    <p>Ruang untuk kegiatan ekstrakurikuler dan olahraga</p>
+                </div>
+                <div class="fasilitas-item">
+                    <i class="fas fa-laptop fasilitas-icon"></i>
+                    <h4>Lab Komputer</h4>
+                    <p>Laboratorium komputer dengan perangkat modern</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pendekatan Pembelajaran -->
+        <div class="card-tentang">
+            <h3><i class="fas fa-graduation-cap"></i> Pendekatan Pembelajaran</h3>
+            <p>Dalam kegiatan pembelajaran, sekolah menerapkan pendekatan yang menyeimbangkan aspek akademik dan non-akademik. Selain program mata pelajaran standar, siswa diberi kesempatan untuk berpartisipasi dalam berbagai kegiatan:</p>
+            <ul>
+                <li>Organisasi Siswa untuk mengembangkan keterampilan kepemimpinan</li>
+                <li>Kegiatan Olahraga untuk kebugaran jasmani dan mental</li>
+                <li>Kegiatan Seni untuk pengembangan kreativitas</li>
+                <li>Kegiatan Sosial untuk memupuk kepedulian masyarakat</li>
+                <li>Program Kerja Nyata untuk pengalaman nyata di dunia kerja</li>
+            </ul>
+        </div>
+
+        <!-- Prestasi dan Lulusan -->
+        <div class="card-tentang">
+            <h3><i class="fas fa-trophy"></i> Prestasi dan Lulusan</h3>
+            <p>SMA Raden Rahmat juga dikenal aktif dalam mencetak lulusan yang siap melanjutkan ke jenjang pendidikan tinggi maupun memasuki dunia kerja, berlandaskan nilai-nilai disiplin, tanggung jawab, dan kompetensi profesional.</p>
+            <p>Banyak lulusan SMA Raden Rahmat Balongbendo berhasil memasuki perguruan tinggi ternama di Indonesia dan luar negeri, serta menjadi profesional yang kompeten di berbagai bidang industri.</p>
+        </div>
+
+        <!-- Quote Box -->
+        <div class="quote-box">
+            <i class="fas fa-quote-left"></i>
+            <p>"Mendidik generasi muda dengan keunggulan akademik, karakter, dan keterampilan untuk menghadapi tantangan global"</p>
+            <div class="author">— SMA Raden Rahmat Balongbendo</div>
+        </div>
+
+        <!-- Lokasi -->
+        <div class="card-tentang">
+            <h3><i class="fas fa-map-marker-alt"></i> Lokasi Sekolah</h3>
+            <p><strong>Alamat:</strong> Jalan Raya Balongbendo, Desa Bakalan Wringinpitu, Kecamatan Balongbendo, Kabupaten Sidoarjo, Jawa Timur 61263, Indonesia</p>
+            <div style="margin-top: 20px; height: 300px; border-radius: 10px; overflow: hidden;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.769846353418!2d112.75000000000001!3d-7.350000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb5e0e0e0e0e%3A0x2e0e0e0e0e0e0e0e!2sSMA%20Raden%20Rahmat%20Balongbendo!5e0!3m2!1sid!2sid!4v1640000000000!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- sosmed icon -->
     <div class="iconBox">
         <a href="" class="perIconBox wa">
@@ -209,7 +663,7 @@
         </a>
     </div>
 
-    <!-- Modern Professional Footer - Reduced Height -->
+<!-- Modern Professional Footer - Reduced Height -->
     <footer class="footer">
         <div class="container">
             <div class="row">

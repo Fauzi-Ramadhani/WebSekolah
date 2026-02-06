@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>Tentang Sekolah - SMA Raden Rahmat Balongbendo</title>
+    <title>Visi & Misi - SMA Raden Rahmat Balongbendo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
@@ -30,6 +30,324 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        /* Custom CSS for Visi & Misi page */
+        .visi-misi-section {
+            margin-top: 120px;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visi-misi-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+            animation: floatBackground 20s linear infinite;
+        }
+
+        @keyframes floatBackground {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+
+        .visi-misi-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .visi-misi-section .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .visi-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .visi-card:hover::before {
+            left: 100%;
+        }
+
+        .visi-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .visi-card h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #667eea;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .visi-card h3 i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        .visi-card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .misi-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .misi-list li {
+            padding: 20px;
+            margin-bottom: 15px;
+            background: rgba(102, 126, 234, 0.1);
+            border-left: 4px solid #667eea;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .misi-list li::before {
+            content: counter(list-item);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .misi-list li:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateX(10px);
+            border-left-width: 6px;
+        }
+
+        .misi-list li strong {
+            color: #764ba2;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .misi-list li span {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .core-values {
+            margin: 60px 0;
+        }
+
+        .core-values h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            position: relative;
+        }
+
+        .core-values h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover .value-icon {
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        .value-card h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .visionary-image {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .visionary-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .visi-misi-section h1 {
+                font-size: 2rem;
+            }
+
+            .visi-misi-section .subtitle {
+                font-size: 1rem;
+            }
+
+            .visi-card {
+                padding: 25px;
+            }
+
+            .visi-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .visi-card p {
+                font-size: 1rem;
+            }
+
+            .core-values h2 {
+                font-size: 2rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .misi-list li {
+                padding-left: 50px;
+            }
+
+            .misi-list li::before {
+                width: 25px;
+                height: 25px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Animation classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+    </style>
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbarKu fixed-top">
@@ -185,6 +503,114 @@
 
         </div>
     </nav>
+
+    <!-- Hero Section -->
+    <section class="visi-misi-section">
+        <div class="container">
+            <h1>Visi & Misi</h1>
+            <p class="subtitle">Tujuan dan Strategi SMA Raden Rahmat Balongbendo</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container mt-5">
+        <!-- Visi -->
+        <div class="visi-card fade-in-up delay-1">
+            <h3><i class="fas fa-eye"></i> Visi Sekolah</h3>
+            <p><strong>"Unggul dalam Prestasi, Terampil, Berakhlak, Berwawasan IPTEK, dan Berdasar IMTAQ"</strong></p>
+            <p>SMA Raden Rahmat Balongbendo berkomitmen untuk menjadi lembaga pendidikan yang menghasilkan siswa yang unggul dalam prestasi akademik, terampil dalam keterampilan praktis, berakhlak mulia, memiliki wawasan iptek modern, dan berlandaskan imtaq (ilmu agama Islam).</p>
+        </div>
+
+        <!-- Misi -->
+        <div class="visi-card fade-in-up delay-2">
+            <h3><i class="fas fa-bullseye"></i> Misi Sekolah</h3>
+            <ol class="misi-list" style="counter-reset: list-item;">
+                <li class="fade-in-up delay-3">
+                    <strong>Menyelenggarakan pembelajaran dan bimbingan secara efektif</strong>
+                    <span>Untuk mengoptimalkan potensi yang dimiliki setiap siswa melalui pembelajaran yang interaktif dan pendekatan yang berpusat pada siswa.</span>
+                </li>
+                <li class="fade-in-up delay-4">
+                    <strong>Melestarikan dan mengembangkan seni dan budaya bangsa</strong>
+                    <span>Meningkatkan kesadaran dan penghayatan terhadap warisan seni dan budaya Indonesia melalui berbagai kegiatan dan program pembelajaran.</span>
+                </li>
+                <li class="fade-in-up delay-5">
+                    <strong>Mengembangkan budaya kompetitif</strong>
+                    <span>Mendorong siswa untuk bersaing dengan sehat dalam menyelesaikan tugas-tugas kependidikan dan keguruan, serta mempersiapkan mereka untuk tantangan dunia kerja dan pendidikan tinggi.</span>
+                </li>
+                <li class="fade-in-up delay-1">
+                    <strong>Menumbuhkan penghayatan terhadap ajaran agama</strong>
+                    <span>Memantapkan keimanan dan ketaqwaan siswa melalui pembelajaran agama yang komprehensif dan praktis, serta kegiatan keagamaan yang rutin.</span>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Core Values -->
+        <div class="core-values">
+            <h2>Fokus Pembelajaran</h2>
+            <div class="values-grid">
+                <div class="value-card fade-in-up delay-2">
+                    <div class="value-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Prestasi Akademik</h4>
+                    <p>Program pembelajaran yang dirancang untuk menghasilkan siswa dengan prestasi akademik tinggi dan siap melanjutkan ke jenjang pendidikan tinggi.</p>
+                </div>
+
+                <div class="value-card fade-in-up delay-3">
+                    <div class="value-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Keterampilan Praktis</h4>
+                    <p>Pembelajaran keterampilan praktis yang relevan dengan kebutuhan industri dan dunia kerja, mempersiapkan siswa untuk karir profesional.</p>
+                </div>
+
+                <div class="value-card fade-in-up delay-4">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Budi Pekerti</h4>
+                    <p>Pengembangan karakter dan akhlak mulia melalui pendidikan karakter yang berintegrasi dengan setiap kegiatan belajar mengajar.</p>
+                </div>
+
+                <div class="value-card fade-in-up delay-5">
+                    <div class="value-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>IPTEK</h4>
+                    <p>Penggunaan teknologi informasi dan komunikasi yang modern dalam proses pembelajaran untuk meningkatkan efisiensi dan kualitas pendidikan.</p>
+                </div>
+
+                <div class="value-card fade-in-up delay-1">
+                    <div class="value-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <h4>IMTAQ</h4>
+                    <p>Pendidikan agama yang komprehensif untuk memantapkan keimanan dan ketaqwaan siswa sebagai dasar hidup yang berkualitas.</p>
+                </div>
+
+                <div class="value-card fade-in-up delay-2">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Global Ready</h4>
+                    <p>Persiapan siswa untuk menjadi generasi yang siap bersaing secara global dengan penguasaan bahasa internasional dan pemahaman budaya global.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visionary Image -->
+        <div class="visionary-image fade-in-up delay-3">
+            <img src="images/bg-visimisi.png" alt="Visi Misi SMA Raden Rahmat Balongbendo">
+        </div>
+
+        <!-- Quote -->
+        <div class="text-center my-5 fade-in-up delay-4">
+            <blockquote class="blockquote" style="font-size: 1.5rem; font-style: italic; color: #666; border-left: 4px solid #667eea; padding-left: 20px; margin: 40px 0;">
+                "Pendidikan adalah investasi terbaik untuk masa depan generasi muda. SMa Raden Rahmat Balongbendo berkomitmen untuk memberikan pendidikan berkualitas yang holistik dan relevan dengan kebutuhan zaman."
+                <footer class="blockquote-footer mt-3">Kepala Sekolah</footer>
+            </blockquote>
+        </div>
+    </section>
 
     <!-- sosmed icon -->
     <div class="iconBox">
@@ -404,6 +830,53 @@
             }
         }
     </style>
+
+    <script>
+        // Smooth scroll animation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.fade-in-up');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Add hover effect to cards
+            const cards = document.querySelectorAll('.visi-card, .value-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeft = '4px solid #667eea';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeft = 'none';
+                });
+            });
+
+            // Add click animation to list items
+            const listItems = document.querySelectorAll('.misi-list li');
+            listItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

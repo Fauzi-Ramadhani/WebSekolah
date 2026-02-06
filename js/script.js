@@ -13,5 +13,5 @@ const navbarHome = document.querySelector(".navbarHome");
 window.addEventListener("scroll", () => {
   const post = window.scrollY > 100;
 
-  navbarHome.classList.toggle("scroll", post);
+  navbarHome.classList.toggle("scrolled", post);
 });
