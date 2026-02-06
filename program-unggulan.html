@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>Tentang Sekolah - SMA Raden Rahmat Balongbendo</title>
+    <title>Program Unggulan - SMA Raden Rahmat Balongbendo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
@@ -31,6 +31,417 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <style>
+        /* Enhanced Hero Section */
+        .hero-section {
+            margin-top: 120px;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+            animation: floatBackground 20s linear infinite;
+        }
+
+        @keyframes floatBackground {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Programs Overview */
+        .programs-overview {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .overview-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .overview-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .overview-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .overview-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .overview-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        /* Featured Programs */
+        .featured-programs {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .program-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid #667eea;
+        }
+
+        .program-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .program-card:hover::before {
+            left: 100%;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .program-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .program-card:hover .program-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .program-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .program-card p {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .program-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .program-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .program-details li {
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+        }
+
+        .program-details li::before {
+            content: '✓';
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .program-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .program-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Program Benefits */
+        .program-benefits {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(118, 75, 162, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .benefit-card:hover::before {
+            left: 100%;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .benefit-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #764ba2;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .benefit-info h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .benefit-level {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .benefit-description {
+            font-size: 0.95rem;
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Animation Classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+
+        .zoom-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-top {
+            opacity: 0;
+            transform: translateY(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .bounce-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
+        .delay-8 { animation-delay: 0.8s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section .subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .programs-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-text h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .programs-overview,
+            .featured-programs,
+            .program-benefits {
+                padding: 40px 0;
+            }
+
+            .program-card,
+            .benefit-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbarKu fixed-top">
         <div class="container">
@@ -186,7 +597,249 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="fade-in-up">Program Unggulan</h1>
+            <p class="subtitle fade-in-up delay-1">Program Pendidikan Unggulan SMA Raden Rahmat Balongbendo untuk Keunggulan Karakter dan Prestasi</p>
+        </div>
+    </section>
 
+    <!-- Programs Overview -->
+    <section class="programs-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text fade-in-left delay-1">
+                    <h2>Program Pendidikan Unggulan Berkualitas</h2>
+                    <p>SMA Raden Rahmat Balongbendo menawarkan program unggulan yang dirancang untuk mengembangkan potensi siswa secara holistik. Program-program ini ditujukan untuk mempersiapkan siswa menjadi individu yang berkarakter, berpendidikan, dan siap menghadapi tantangan dunia profesional.</p>
+                    <p>Dengan pendekatan pembelajaran yang inovatif dan fasilitas modern, kami memastikan setiap siswa mendapatkan pengalaman belajar yang berkualitas dan relevan dengan kebutuhan zaman.</p>
+                    <p>Program unggulan kami menekankan pada pengembangan karakter, keterampilan, dan pengetahuan yang seimbang untuk membentuk generasi muda yang siap bersaing secara global.</p>
+                </div>
+                <div class="overview-image fade-in-right delay-2">
+                    <img src="images/1.jpg" alt="Program Pendidikan Unggulan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Programs -->
+    <section class="featured-programs">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Program Unggulan Kami</h2>
+            <div class="programs-grid">
+                <div class="program-card fade-in-up delay-1">
+                    <i class="program-icon fas fa-graduation-cap"></i>
+                    <h3>Program IPS Unggulan</h3>
+                    <p>Pembelajaran Ilmu Pengetahuan Sosial dengan standar internasional untuk persiapan universitas terbaik</p>
+                    <div class="program-details">
+                        <ul>
+                            <li>Program berfokus pada Analisis Sosial</li>
+                            <li>Perencanaan Karir dan Pendidikan Lanjut</li>
+                            <li>Kegiatan Internasional dan Pertukaran Pelajar</li>
+                            <li>Pembekalan Ujian Nasional dan Seleksi Mandiri</li>
+                        </ul>
+                    </div>
+                    <button class="program-button">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="program-card fade-in-up delay-2">
+                    <i class="program-icon fas fa-calculator"></i>
+                    <h3>Program IPA Unggulan</h3>
+                    <p>Pembelajaran Ilmu Pengetahuan Alam yang mendalam dengan labolatorium modern dan penelitian mandiri</p>
+                    <div class="program-details">
+                        <ul>
+                            <li>Laboratorium Fisika, Kimia, dan Biologi Modern</li>
+                            <li>Program STEM (Science, Technology, Engineering, Math)</li>
+                            <li>Praktikum Penelitian dan Karya Ilmiah</li>
+                            <li>Pembekalan Olimpiade Nasional dan Internasional</li>
+                        </ul>
+                    </div>
+                    <button class="program-button">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="program-card fade-in-up delay-3">
+                    <i class="program-icon fas fa-globe"></i>
+                    <h3>Program Bahasa Internasional</h3>
+                    <p>Pembelajaran bahasa Inggris dengan standar Internasional dan persiapan TOEFL/IELTS</p>
+                    <div class="program-details">
+                        <ul>
+                            <li>Program ESL (English as a Second Language)</li>
+                            <li>Praktikum Komunikasi Bahasa Inggris</li>
+                            <li>Program Pertukaran Pelajar ke Negara lain</li>
+                            <li>Pembekalan Ujian TOEFL/IELTS</li>
+                        </ul>
+                    </div>
+                    <button class="program-button">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="program-card fade-in-up delay-4">
+                    <i class="program-icon fas fa-code"></i>
+                    <h3>Program Teknologi Informasi</h3>
+                    <p>Pengembangan keterampilan teknologi informasi dengan kurikulum modern dan fasilitas laboratorium</p>
+                    <div class="program-details">
+                        <ul>
+                            <li>Program Pemrograman dan Desain Web</li>
+                            <li>Laboratorium Komputer Modern</li>
+                            <li>Praktikum Coding dan Pengembangan Aplikasi</li>
+                            <li>Program Internship ke Perusahaan IT</li>
+                        </ul>
+                    </div>
+                    <button class="program-button">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="program-card fade-in-up delay-5">
+                    <i class="program-icon fas fa-palette"></i>
+                    <h3>Program Seni & Budaya</h3>
+                    <p>Pengembangan minat dan bakat dalam seni dan budaya Indonesia</p>
+                    <div class="program-details">
+                        <ul>
+                            <li>Program Seni Rupa dan Desain</li>
+                            <li>Praktek Seni Tari dan Musik</li>
+                            <li>Program Budaya Indonesia</li>
+                            <li>Partisipasi dalam Lomba dan Pertunjukan</li>
+                        </ul>
+                    </div>
+                    <button class="program-button">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="program-card fade-in-up delay-6">
+                    <i class="program-icon fas fa-dumbbell"></i>
+                    <h3>Program Olahraga dan Kesehatan</h3>
+                    <p>Pengembangan kebugaran jasmani dan kesehatan untuk kesejahteraan hidup</p>
+                    <div class="program-details">
+                        <ul>
+                            <li>Program Latihan Olahraga Profesional</li>
+                            <li>Praktikum Fisioterapi dan Nutrisi</li>
+                            <li>Kegiatan Ekspedisi dan Outdoor Activities</li>
+                            <li>Pertandingan Antarschool dan Antargaleri</li>
+                        </ul>
+                    </div>
+                    <button class="program-button">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Benefits -->
+    <section class="program-benefits">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Keunggulan Program Unggulan</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in-up delay-1">
+                    <div class="benefit-header">
+                        <div class="benefit-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="benefit-info">
+                            <h4>Akurasi Prestasi</h4>
+                            <div class="benefit-level">Tinggi</div>
+                        </div>
+                    </div>
+                    <div class="benefit-description">
+                        Program unggulan kami telah terbukti menghasilkan prestasi yang luar biasa di berbagai ajang lomba dan kompetisi nasional serta internasional.
+                    </div>
+                </div>
+
+                <div class="benefit-card fade-in-up delay-2">
+                    <div class="benefit-header">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="benefit-info">
+                            <h4>Guru Profesional</h4>
+                            <div class="benefit-level">S1 & S2</div>
+                        </div>
+                    </div>
+                    <div class="benefit-description">
+                        Tenaga pengajar yang profesional dan berpengalaman di bidangnya, dengan latar belakang pendidikan tinggi dan sertifikasi internasional.
+                    </div>
+                </div>
+
+                <div class="benefit-card fade-in-up delay-3">
+                    <div class="benefit-header">
+                        <div class="benefit-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="benefit-info">
+                            <h4>Fasilitas Modern</h4>
+                            <div class="benefit-level">Terbaru</div>
+                        </div>
+                    </div>
+                    <div class="benefit-description">
+                        Laboratorium modern, perpustakaan digital, dan ruang kelas berteknologi tinggi untuk mendukung proses pembelajaran terbaik.
+                    </div>
+                </div>
+
+                <div class="benefit-card fade-in-up delay-4">
+                    <div class="benefit-header">
+                        <div class="benefit-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="benefit-info">
+                            <h4>Pathway yang Jelas</h4>
+                            <div class="benefit-level">Terstruktur</div>
+                        </div>
+                    </div>
+                    <div class="benefit-description">
+                        Kurikulum yang terstruktur dan jalur pendidikan yang jelas untuk persiapan perguruan tinggi dan karir profesional.
+                    </div>
+                </div>
+
+                <div class="benefit-card fade-in-up delay-5">
+                    <div class="benefit-header">
+                        <div class="benefit-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="benefit-info">
+                            <h4>Pengalaman Global</h4>
+                            <div class="benefit-level">International</div>
+                        </div>
+                    </div>
+                    <div class="benefit-description">
+                        Program pertukaran pelajar, internship internasional, dan pengalaman belajar di luar negeri untuk pemahaman global.
+                    </div>
+                </div>
+
+                <div class="benefit-card fade-in-up delay-6">
+                    <div class="benefit-header">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="benefit-info">
+                            <h4>Pendidikan Karakter</h4>
+                            <div class="benefit-level">Utama</div>
+                        </div>
+                    </div>
+                    <div class="benefit-description">
+                        Pembinaan karakter dan akhlak mulia sebagai dasar utama pendidikan untuk menciptakan generasi yang berakhlak.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sosmed icon -->
+    <div class="iconBox">
+        <a href="" class="perIconBox wa">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="" class="perIconBox fb">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="" class="perIconBox ig">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="" class="perIconBox yt">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="" class="perIconBox linkin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
 
     <!-- Modern Professional Footer - Reduced Height -->
     <footer class="footer">
@@ -293,96 +946,88 @@
         </div>
     </footer>
 
-    <style>
-        /* Enhanced Footer Styles - Reduced Height */
-        .footer {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px 0 20px;
-            margin-top: 125px;
-            position: relative;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .footer h4 {
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer h4::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            border-radius: 3px;
-        }
-
-        .footer a:hover {
-            opacity: 1 !important;
-            color: #667eea !important;
-            transform: translateX(5px);
-        }
-
-        .footer .footerContactUs .perFooterContactUs {
-            display: flex;
-            align-items: flex-start;
-            margin: 10px 0;
-        }
-
-        .footer .footerContactUs .perFooterContactUs i {
-            margin-top: 3px;
-            min-width: 20px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .footer {
-                padding: 30px 0 15px;
-            }
+    <script>
+        // Enhanced Scroll and Load Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation elements
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .zoom-in, .slide-in-top, .bounce-in');
             
-            .footer .col-md-4,
-            .footer .col-md-3,
-            .footer .col-md-5 {
-                margin-bottom: 25px;
-            }
-            
-            .footer h4::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            
-            .footer h4 {
-                text-align: center;
-            }
-        }
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
 
-        @media (max-width: 480px) {
-            .footer {
-                padding: 25px 0 10px;
-            }
-            
-            .footer .d-flex {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .footer .d-flex img {
-                margin-right: 0;
-                margin-bottom: 8px;
-            }
-        }
-    </style>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = entry.target.classList.contains('fade-in-up') ? 'translateY(0)' : 
+                                                      entry.target.classList.contains('fade-in-left') ? 'translateX(0)' :
+                                                      entry.target.classList.contains('fade-in-right') ? 'translateX(0)' :
+                                                      entry.target.classList.contains('zoom-in') ? 'scale(1)' :
+                                                      entry.target.classList.contains('slide-in-top') ? 'translateY(0)' :
+                                                      entry.target.classList.contains('bounce-in') ? 'scale(1)' : 'none';
+                    }
+                });
+            }, observerOptions);
+
+            // Set initial state and observe elements
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                if (el.classList.contains('fade-in-up')) {
+                    el.style.transform = 'translateY(30px)';
+                } else if (el.classList.contains('fade-in-left')) {
+                    el.style.transform = 'translateX(-30px)';
+                } else if (el.classList.contains('fade-in-right')) {
+                    el.style.transform = 'translateX(30px)';
+                } else if (el.classList.contains('zoom-in')) {
+                    el.style.transform = 'scale(0.9)';
+                } else if (el.classList.contains('slide-in-top')) {
+                    el.style.transform = 'translateY(-30px)';
+                } else if (el.classList.contains('bounce-in')) {
+                    el.style.transform = 'scale(0.8)';
+                }
+                el.style.transition = 'all 0.8s ease';
+                observer.observe(el);
+            });
+
+            // Add hover effect to program cards
+            const programCards = document.querySelectorAll('.program-card');
+            programCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeft = '4px solid #667eea';
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeft = 'none';
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add hover effect to benefit cards
+            const benefitCards = document.querySelectorAll('.benefit-card');
+            benefitCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeft = '4px solid #764ba2';
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeft = 'none';
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Parallax effect on hero section
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('.hero-section');
+                if (parallax) {
+                    parallax.style.transform = `translateY(${scrolled * 0.3}px)`;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
