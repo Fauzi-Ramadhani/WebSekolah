@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>Tentang Sekolah - SMA Raden Rahmat Balongbendo</title>
+    <title>Kurikulum - SMA Raden Rahmat Balongbendo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
@@ -31,6 +31,392 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <style>
+        /* Enhanced Hero Section */
+        .hero-section {
+            margin-top: 120px;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+            animation: floatBackground 20s linear infinite;
+        }
+
+        @keyframes floatBackground {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Curriculum Overview */
+        .curriculum-overview {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .overview-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .overview-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .overview-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .overview-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .overview-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        /* Curriculum Features */
+        .curriculum-features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid #667eea;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        /* Subjects Grid */
+        .subjects-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subject-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(118, 75, 162, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .subject-card:hover::before {
+            left: 100%;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .subject-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .subject-icon {
+            font-size: 2.5rem;
+            color: #764ba2;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .subject-info h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .subject-level {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .subject-description {
+            font-size: 0.95rem;
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .subject-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .subject-details li {
+            padding: 8px 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+        }
+
+        .subject-details li::before {
+            content: '✓';
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Animation Classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+
+        .zoom-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-top {
+            opacity: 0;
+            transform: translateY(-30px);
+            transition: all 0.8s ease;
+        }
+
+        .bounce-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
+        .delay-8 { animation-delay: 0.8s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section .subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .features-grid,
+            .subjects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-text h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .curriculum-overview,
+            .curriculum-features,
+            .subjects-section {
+                padding: 40px 0;
+            }
+
+            .feature-card,
+            .subject-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbarKu fixed-top">
         <div class="container">
@@ -186,7 +572,211 @@
         </div>
     </nav>
 
-   
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="fade-in-up">Kurikulum</h1>
+            <p class="subtitle fade-in-up delay-1">Kurikulum Pendidikan SMA Raden Rahmat Balongbendo Berbasis Keunggulan dan Karakter</p>
+        </div>
+    </section>
+
+    <!-- Curriculum Overview -->
+    <section class="curriculum-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text fade-in-left delay-1">
+                    <h2>Pendidikan Berkualitas untuk Masa Depan</h2>
+                    <p>SMA Raden Rahmat Balongbendo menerapkan kurikulum yang relevan dengan kebutuhan zaman modern, yang menggabungkan aspek akademis, karakter, dan keterampilan.</p>
+                    <p>Kurikulum kami dirancang untuk menyiapkan siswa menjadi individu yang berkarakter, berpendidikan, dan siap menghadapi tantangan dunia profesional.</p>
+                    <p>Dengan pendekatan pembelajaran yang inovatif dan fasilitas modern, kami memastikan setiap siswa mendapatkan pendidikan berkualitas yang seimbang.</p>
+                </div>
+                <div class="overview-image fade-in-right delay-2">
+                    <img src="images/1.jpg" alt="Kurikulum Pendidikan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Features -->
+    <section class="curriculum-features">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Fitur Kurikulum Unggulan</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up delay-1">
+                    <i class="feature-icon fas fa-graduation-cap"></i>
+                    <h3>Akademis Unggulan</h3>
+                    <p>Program akademis yang mendalam dengan fokus pada pengembangan pengetahuan dan keterampilan akademis</p>
+                </div>
+                <div class="feature-card fade-in-up delay-2">
+                    <i class="feature-icon fas fa-heart"></i>
+                    <h3>Pendidikan Karakter</h3>
+                    <p>Pembinaan nilai-nilai moral dan etika untuk membentuk generasi yang berakhlak mulia</p>
+                </div>
+                <div class="feature-card fade-in-up delay-3">
+                    <i class="feature-icon fas fa-cogs"></i>
+                    <h3>Keterampilan Praktis</h3>
+                    <p>Pembelajaran keterampilan praktis untuk mempersiapkan siswa memasuki dunia kerja</p>
+                </div>
+                <div class="feature-card fade-in-up delay-4">
+                    <i class="feature-icon fas fa-globe"></i>
+                    <h3>Global Perspective</h3>
+                    <p>Pendekatan internasional dengan kurikulum yang sesuai dengan standar global</p>
+                </div>
+                <div class="feature-card fade-in-up delay-5">
+                    <i class="feature-icon fas fa-brain"></i>
+                    <h3>STEM Education</h3>
+                    <p>Fokus pada pendidikan Science, Technology, Engineering, dan Mathematics</p>
+                </div>
+                <div class="feature-card fade-in-up delay-6">
+                    <i class="feature-icon fas fa-music"></i>
+                    <h3>Kesenian & Budaya</h3>
+                    <p>Pengembangan minat dan bakat dalam seni dan budaya Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Program Pembelajaran</h2>
+            <div class="subjects-grid">
+                <div class="subject-card fade-in-up delay-1">
+                    <div class="subject-header">
+                        <div class="subject-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="subject-info">
+                            <h4>Bahasa & Sastra</h4>
+                            <div class="subject-level">Wajib & Pilihan</div>
+                        </div>
+                    </div>
+                    <div class="subject-description">
+                        Pembelajaran bahasa dan sastra untuk mengembangkan komunikasi efektif
+                    </div>
+                    <ul class="subject-details">
+                        <li>Bahasa Indonesia</li>
+                        <li>Bahasa Inggris</li>
+                        <li>Bahasa Jerman</li>
+                        <li>Sastra Indonesia</li>
+                        <li>Sastra Inggris</li>
+                    </ul>
+                </div>
+
+                <div class="subject-card fade-in-up delay-2">
+                    <div class="subject-header">
+                        <div class="subject-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="subject-info">
+                            <h4>Ilmu Pengetahuan Alam</h4>
+                            <div class="subject-level">Wajib</div>
+                        </div>
+                    </div>
+                    <div class="subject-description">
+                        Pengetahuan tentang alam dan lingkungan hidup
+                    </div>
+                    <ul class="subject-details">
+                        <li>Fisika</li>
+                        <li>Kimia</li>
+                        <li>Biologi</li>
+                        <li>Matematika</li>
+                        <li>Ekonomi</li>
+                    </ul>
+                </div>
+
+                <div class="subject-card fade-in-up delay-3">
+                    <div class="subject-header">
+                        <div class="subject-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="subject-info">
+                            <h4>Ilmu Pengetahuan Sosial</h4>
+                            <div class="subject-level">Wajib</div>
+                        </div>
+                    </div>
+                    <div class="subject-description">
+                        Pemahaman tentang masyarakat, negara, dan dunia
+                    </div>
+                    <ul class="subject-details">
+                        <li>Sejarah</li>
+                        <li>Geografi</li>
+                        <li>Sosiologi</li>
+                        <li>Ekonomi</li>
+                        <li>PSIKOLOGI</li>
+                    </ul>
+                </div>
+
+                <div class="subject-card fade-in-up delay-4">
+                    <div class="subject-header">
+                        <div class="subject-icon">
+                            <i class="fas fa-star-and-crescent"></i>
+                        </div>
+                        <div class="subject-info">
+                            <h4>Pendidikan Agama</h4>
+                            <div class="subject-level">Wajib</div>
+                        </div>
+                    </div>
+                    <div class="subject-description">
+                        Pembinaan keimanan dan akhlak mulia
+                    </div>
+                    <ul class="subject-details">
+                        <li>Pendidikan Agama Islam</li>
+                        <li>Akidah Akhlak</li>
+                        <li>Fiqh</li>
+                        <li>Tauhid</li>
+                        <li>Sejarah Islam</li>
+                    </ul>
+                </div>
+
+                <div class="subject-card fade-in-up delay-5">
+                    <div class="subject-header">
+                        <div class="subject-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="subject-info">
+                            <h4>Teknologi Informasi</h4>
+                            <div class="subject-level">Pilihan</div>
+                        </div>
+                    </div>
+                    <div class="subject-description">
+                        Pengembangan keterampilan teknologi informasi dan komunikasi
+                    </div>
+                    <ul class="subject-details">
+                        <li>Pemrograman</li>
+                        <li>Desain Grafis</li>
+                        <li>Web Development</li>
+                        <li>Database</li>
+                        <li>Komputer Networking</li>
+                    </ul>
+                </div>
+
+                <div class="subject-card fade-in-up delay-6">
+                    <div class="subject-header">
+                        <div class="subject-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="subject-info">
+                            <h4>Olahraga & Kesehatan</h4>
+                            <div class="subject-level">Wajib</div>
+                        </div>
+                    </div>
+                    <div class="subject-description">
+                        Pengembangan kebugaran jasmani dan kesehatan
+                    </div>
+                    <ul class="subject-details">
+                        <li>Olahraga Dasar</li>
+                        <li>Gerakan Olahraga</li>
+                        <li>Kesehatan Fisik</li>
+                        <li>Pengolahan Nutrisi</li>
+                        <li>Kesehatan Mental</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Modern Professional Footer - Reduced Height -->
     <footer class="footer">
@@ -293,7 +883,7 @@
         </div>
     </footer>
 
-    <style>
+        <style>
         /* Enhanced Footer Styles - Reduced Height */
         .footer {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
@@ -383,6 +973,89 @@
             }
         }
     </style>
+
+    <script>
+        // Enhanced Scroll and Load Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation elements
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .zoom-in, .slide-in-top, .bounce-in');
+            
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = entry.target.classList.contains('fade-in-up') ? 'translateY(0)' : 
+                                                      entry.target.classList.contains('fade-in-left') ? 'translateX(0)' :
+                                                      entry.target.classList.contains('fade-in-right') ? 'translateX(0)' :
+                                                      entry.target.classList.contains('zoom-in') ? 'scale(1)' :
+                                                      entry.target.classList.contains('slide-in-top') ? 'translateY(0)' :
+                                                      entry.target.classList.contains('bounce-in') ? 'scale(1)' : 'none';
+                    }
+                });
+            }, observerOptions);
+
+            // Set initial state and observe elements
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                if (el.classList.contains('fade-in-up')) {
+                    el.style.transform = 'translateY(30px)';
+                } else if (el.classList.contains('fade-in-left')) {
+                    el.style.transform = 'translateX(-30px)';
+                } else if (el.classList.contains('fade-in-right')) {
+                    el.style.transform = 'translateX(30px)';
+                } else if (el.classList.contains('zoom-in')) {
+                    el.style.transform = 'scale(0.9)';
+                } else if (el.classList.contains('slide-in-top')) {
+                    el.style.transform = 'translateY(-30px)';
+                } else if (el.classList.contains('bounce-in')) {
+                    el.style.transform = 'scale(0.8)';
+                }
+                el.style.transition = 'all 0.8s ease';
+                observer.observe(el);
+            });
+
+            // Add hover effect to feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeft = '4px solid #667eea';
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeft = 'none';
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add hover effect to subject cards
+            const subjectCards = document.querySelectorAll('.subject-card');
+            subjectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeft = '4px solid #764ba2';
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeft = 'none';
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Parallax effect on hero section
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('.hero-section');
+                if (parallax) {
+                    parallax.style.transform = `translateY(${scrolled * 0.3}px)`;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
