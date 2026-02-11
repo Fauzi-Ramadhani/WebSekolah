@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>Tentang Sekolah - SMA Raden Rahmat Balongbendo</title>
+    <title>Organisasi Siswa - SMA Raden Rahmat Balongbendo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbarKu fixed-top">
@@ -186,7 +187,631 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-organisasi">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1>Organisasi Siswa</h1>
+                <p>Berbagai organisasi yang bertanggung jawab untuk mengelola kegiatan sekolah dan mewakili suara siswa</p>
+                <div class="hero-underline"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Organizations Grid Section -->
+    <section class="organizations-grid-section">
+        <div class="container">
+            <div class="grid-content">
+                <h2 class="section-title fade-in-up">Daftar Organisasi</h2>
+                <p class="section-description fade-in-up delay-1">Berikut adalah organisasi yang ada di SMA Raden Rahmat Balongbendo yang bertanggung jawab untuk mengelola kegiatan sekolah dan mewakili suara siswa.</p>
+                
+                <div class="organizations-grid fade-in-up delay-2">
+                    <!-- OSIS -->
+                    <div class="organization-card">
+                        <div class="organization-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>OSIS</h3>
+                        <p>Organisasi Siswa Intra Sekolah yang bertanggung jawab untuk mengelola kegiatan sekolah dan mewakili suara siswa</p>
+                        <div class="organization-details">
+                            <span><i class="fas fa-users"></i> 10 Anggota</span>
+                            <span><i class="fas fa-calendar"></i> Tahun 2024/2025</span>
+                        </div>
+                        <button class="btn-organization" data-organization="osis">Lihat Detail</button>
+                    </div>
+
+                    <!-- Pramuka -->
+                    <div class="organization-card">
+                        <div class="organization-icon">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <h3>Pramuka</h3>
+                        <p>Organisasi pramuka yang bertanggung jawab untuk melatih siswa dalam kepemimpinan dan survival skills</p>
+                        <div class="organization-details">
+                            <span><i class="fas fa-users"></i> 25 Anggota</span>
+                            <span><i class="fas fa-calendar"></i> Tahun 2024/2025</span>
+                        </div>
+                        <button class="btn-organization" data-organization="pramuka">Lihat Detail</button>
+                    </div>
+
+                    <!-- PMR -->
+                    <div class="organization-card">
+                        <div class="organization-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3>PMR</h3>
+                        <p>Palang Merah Remaja yang bertanggung jawab untuk memberikan pertolongan pertama di sekolah</p>
+                        <div class="organization-details">
+                            <span><i class="fas fa-users"></i> 20 Anggota</span>
+                            <span><i class="fas fa-calendar"></i> Tahun 2024/2025</span>
+                        </div>
+                        <button class="btn-organization" data-organization="pmr">Lihat Detail</button>
+                    </div>
+
+                    <!-- Paskribra -->
+                    <div class="organization-card">
+                        <div class="organization-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Paskribra</h3>
+                        <p>Pasukan Pengamanan dan Kesehatan Sekolah yang bertanggung jawab untuk keamanan dan kesehatan lingkungan sekolah</p>
+                        <div class="organization-details">
+                            <span><i class="fas fa-users"></i> 15 Anggota</span>
+                            <span><i class="fas fa-calendar"></i> Tahun 2024/2025</span>
+                        </div>
+                        <button class="btn-organization" data-organization="paskribra">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Details Section -->
+    <section class="organization-details-section" id="organizationDetails">
+        <div class="container">
+            <div class="details-content">
+                <button class="btn-close" id="btnClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <!-- OSIS Details -->
+                <div class="organization-detail" id="osisDetail">
+                    <h2 class="section-title fade-in-up">Struktur Organisasi OSIS</h2>
+                    <p class="section-description fade-in-up delay-1">Berikut adalah struktur organisasi OSIS SMA Raden Rahmat Balongbendo yang bertanggung jawab untuk mengelola kegiatan sekolah dan mewakili suara siswa.</p>
+                    
+                    <div class="organization-tree fade-in-up delay-2">
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <h3>Ketua Osis</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">ketuaosis@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <h3>Wakil Ketua Osis</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">wakilketua@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h3>Bendahara</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">bendahara@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-pen"></i>
+                                    </div>
+                                    <h3>Sekretaris</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">sekretaris@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Humas</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">humas@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Kegiatan</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">kegiatan@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">pramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Keamanan</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">keamanan@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title fade-in-up">Fungsi Divisi OSIS</h2>
+                    <p class="section-description fade-in-up delay-1">Setiap divisi OSIS memiliki fungsi dan tanggung jawab yang berbeda untuk memastikan kegiatan sekolah berjalan dengan baik.</p>
+                    
+                    <div class="division-grid fade-in-up delay-2">
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Ketua Osis</h3>
+                            <p>Memimpin seluruh organisasi siswa dan menjadi perwakilan utama siswa dalam komunikasi dengan pihak sekolah.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Divisi Humas</h3>
+                            <p>Beranggung jawab untuk komunikasi dan hubungan masyarakat, serta promosi kegiatan sekolah.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Divisi Kegiatan</h3>
+                            <p>Merencanakan dan menyelenggarakan berbagai kegiatan sekolah seperti pesta sekolah, lomba, dan acara sosial.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Divisi Pramuka</h3>
+                            <p>Beranggung jawab untuk kegiatan pramuka dan kepanduan, serta melatih siswa dalam leadership dan survival skills.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Divisi Keamanan</h3>
+                            <p>Memastikan keamanan lingkungan sekolah dan mengawasi perilaku siswa agar sesuai dengan tata tertib.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h3>Divisi Keuangan</h3>
+                            <p>Menangani keuangan organisasi siswa, termasuk pengumpulan dana dan pengeluaran untuk kegiatan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pramuka Details -->
+                <div class="organization-detail" id="pramukaDetail">
+                    <h2 class="section-title fade-in-up">Struktur Organisasi Pramuka</h2>
+                    <p class="section-description fade-in-up delay-1">Berikut adalah struktur organisasi Pramuka SMA Raden Rahmat Balongbendo yang bertanggung jawab untuk melatih siswa dalam kepemimpinan dan survival skills.</p>
+                    
+                    <div class="organization-tree fade-in-up delay-2">
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-hiking"></i>
+                                    </div>
+                                    <h3>Ketua Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">ketuapramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <h3>Wakil Ketua Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">wakilketuapramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h3>Bendahara Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">bendahara@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-pen"></i>
+                                    </div>
+                                    <h3>Sekretaris Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">sekretarispramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Humas Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">humaspramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Kegiatan Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">kegiatanpramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Pengajar Pramuka</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">pengajarpramuka@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title fade-in-up">Fungsi Divisi Pramuka</h2>
+                    <p class="section-description fade-in-up delay-1">Setiap divisi Pramuka memiliki fungsi dan tanggung jawab yang berbeda untuk memastikan kegiatan pramuka berjalan dengan baik.</p>
+                    
+                    <div class="division-grid fade-in-up delay-2">
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                            <h3>Ketua Pramuka</h3>
+                            <p>Memimpin seluruh organisasi pramuka dan menjadi perwakilan utama pramuka dalam komunikasi dengan pihak sekolah.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Divisi Humas Pramuka</h3>
+                            <p>Beranggung jawab untuk komunikasi dan hubungan masyarakat, serta promosi kegiatan pramuka.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Divisi Kegiatan Pramuka</h3>
+                            <p>Merencanakan dan menyelenggarakan berbagai kegiatan pramuka seperti latihan, pengenalan alam, dan acara sosial.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Divisi Pengajar Pramuka</h3>
+                            <p>Beranggung jawab untuk mengajar dan melatih anggota pramuka dalam berbagai keterampilan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PMR Details -->
+                <div class="organization-detail" id="pmrDetail">
+                    <h2 class="section-title fade-in-up">Struktur Organisasi PMR</h2>
+                    <p class="section-description fade-in-up delay-1">Berikut adalah struktur organisasi PMR SMA Raden Rahmat Balongbendo yang bertanggung jawab untuk memberikan pertolongan pertama di sekolah.</p>
+                    
+                    <div class="organization-tree fade-in-up delay-2">
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-ambulance"></i>
+                                    </div>
+                                    <h3>Ketua PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">ketuapmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <h3>Wakil Ketua PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">wakilketuapmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h3>Bendahara PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">bendaharapmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-pen"></i>
+                                    </div>
+                                    <h3>Sekretaris PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">sekretarispmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Humas PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">humaspmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Kegiatan PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">kegiatanpmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Pelatihan PMR</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">pelatihanpmr@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title fade-in-up">Fungsi Divisi PMR</h2>
+                    <p class="section-description fade-in-up delay-1">Setiap divisi PMR memiliki fungsi dan tanggung jawab yang berbeda untuk memastikan kegiatan PMR berjalan dengan baik.</p>
+                    
+                    <div class="division-grid fade-in-up delay-2">
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <h3>Ketua PMR</h3>
+                            <p>Memimpin seluruh organisasi PMR dan menjadi perwakilan utama PMR dalam komunikasi dengan pihak sekolah.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Divisi Humas PMR</h3>
+                            <p>Beranggung jawab untuk komunikasi dan hubungan masyarakat, serta promosi kegiatan PMR.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Divisi Kegiatan PMR</h3>
+                            <p>Merencanakan dan menyelenggarakan berbagai kegiatan PMR seperti latihan pertolongan pertama, pengenalan kesehatan, dan acara sosial.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Divisi Pelatihan PMR</h3>
+                            <p>Beranggung jawab untuk mengajar dan melatih anggota PMR dalam berbagai keterampilan pertolongan pertama.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paskribra Details -->
+                <div class="organization-detail" id="paskribraDetail">
+                    <h2 class="section-title fade-in-up">Struktur Organisasi Paskribra</h2>
+                    <p class="section-description fade-in-up delay-1">Berikut adalah struktur organisasi Paskribra SMA Raden Rahmat Balongbendo yang bertanggung jawab untuk keamanan dan kesehatan lingkungan sekolah.</p>
+                    
+                    <div class="organization-tree fade-in-up delay-2">
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3>Ketua Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">ketuapaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <h3>Wakil Ketua Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">wakilketuapaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h3>Bendahara Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">bendaharapaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-pen"></i>
+                                    </div>
+                                    <h3>Sekretaris Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">sekretarispaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-level">
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Humas Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">humaspaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Kegiatan Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">kegiatanpaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                            <div class="tree-node">
+                                <div class="node-content">
+                                    <div class="node-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <h3>Ketua Divisi Keamanan Paskribra</h3>
+                                    <p>Full Name</p>
+                                    <p class="node-email">keamananpaskribra@smaradenrahmat.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title fade-in-up">Fungsi Divisi Paskribra</h2>
+                    <p class="section-description fade-in-up delay-1">Setiap divisi Paskribra memiliki fungsi dan tanggung jawab yang berbeda untuk memastikan kegiatan Paskribra berjalan dengan baik.</p>
+                    
+                    <div class="division-grid fade-in-up delay-2">
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Ketua Paskribra</h3>
+                            <p>Memimpin seluruh organisasi Paskribra dan menjadi perwakilan utama Paskribra dalam komunikasi dengan pihak sekolah.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Divisi Humas Paskribra</h3>
+                            <p>Beranggung jawab untuk komunikasi dan hubungan masyarakat, serta promosi kegiatan Paskribra.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Divisi Kegiatan Paskribra</h3>
+                            <p>Merencanakan dan menyelenggarakan berbagai kegiatan Paskribra seperti latihan keamanan, pengenalan kesehatan, dan acara sosial.</p>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Divisi Keamanan Paskribra</h3>
+                            <p>Beranggung jawab untuk memastikan keamanan lingkungan sekolah dan mengawasi perilaku siswa agar sesuai dengan tata tertib.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content fade-in-up">
+                <h2>Hubungi Kami</h2>
+                <p>Jika Anda memiliki pertanyaan atau ingin berpartisipasi dalam kegiatan organisasi siswa, silakan hubungi kami.</p>
+                <a href="kontak.html" class="btn-contact">
+                    <i class="fas fa-envelope"></i>
+                    Hubungi Osis
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Modern Professional Footer - Reduced Height -->
     <footer class="footer">
@@ -294,7 +919,8 @@
     </footer>
 
     <style>
-        /* Enhanced Footer Styles - Reduced Height */
+
+         /* Enhanced Footer Styles - Reduced Height */
         .footer {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             padding: 40px 0 20px;
@@ -382,7 +1008,563 @@
                 margin-bottom: 8px;
             }
         }
+
+        /* Hero Section */
+        .hero-organisasi {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 150px 0 100px;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-organisasi::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
+            animation: float 20s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-underline {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #FFA51C, #FF6B1C);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Organizations Grid Section */
+        .organizations-grid-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .organizations-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .organization-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #667eea;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .organization-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .organization-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .organization-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .organization-card p {
+            font-size: 0.95rem;
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .organization-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .organization-details span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .btn-organization {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-organization:hover {
+            background: linear-gradient(135deg, #764ba2, #667eea);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+
+        /* Organization Details Section */
+        .organization-details-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+            display: none;
+            position: relative;
+        }
+
+        .organization-details-section.active {
+            display: block;
+        }
+
+        .btn-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: transparent;
+            border: none;
+            color: #6c757d;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .btn-close:hover {
+            background: #e9ecef;
+            color: #2c3e50;
+        }
+
+        .organization-detail {
+            display: none;
+        }
+
+        .organization-detail.active {
+            display: block;
+        }
+
+        /* Organization Structure Section */
+        .organization-tree {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .tree-level {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tree-node {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #667eea;
+            min-width: 200px;
+        }
+
+        .tree-node:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .node-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .node-icon {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .node-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .node-content p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .node-email {
+            font-size: 0.8rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        /* Division Section */
+        .division-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .division-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #667eea;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .division-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .division-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .division-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .division-card p {
+            font-size: 0.95rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .contact-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #FFA51C, #FF6B1C);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 28, 0.3);
+        }
+
+        .btn-contact:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 28, 0.4);
+            color: white;
+        }
+
+        /* Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-up.delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .fade-in-up.delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .organizations-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .organization-tree {
+                gap: 30px;
+            }
+
+            .tree-level {
+                gap: 20px;
+                flex-direction: column;
+            }
+
+            .tree-node {
+                min-width: 250px;
+            }
+
+            .division-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-content h2 {
+                font-size: 2rem;
+            }
+
+            .contact-content p {
+                font-size: 1rem;
+            }
+
+            .btn-close {
+                top: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-organisasi {
+                padding: 120px 0 80px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .organizations-grid-section,
+            .organization-details-section,
+            .contact-section {
+                padding: 60px 0;
+            }
+        }
     </style>
+
+    <!-- Animation Script -->
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe animation elements
+        const animatedElements = document.querySelectorAll('.fade-in-up');
+        animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            observer.observe(el);
+        });
+
+        // Organization details functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const organizationBtns = document.querySelectorAll('.btn-organization');
+            const organizationDetails = document.getElementById('organizationDetails');
+            const btnClose = document.getElementById('btnClose');
+            const organizationDetailElements = document.querySelectorAll('.organization-detail');
+
+            // Add click event to each organization button
+            organizationBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const organization = this.getAttribute('data-organization');
+                    
+                    // Show organization details section
+                    organizationDetails.classList.add('active');
+                    
+                    // Hide all organization detail elements
+                    organizationDetailElements.forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    
+                    // Show the selected organization detail
+                    const selectedDetail = document.getElementById(organization + 'Detail');
+                    if (selectedDetail) {
+                        selectedDetail.classList.add('active');
+                        
+                        // Scroll to the organization details section
+                        organizationDetails.scrollIntoView({ behavior: 'smooth' });
+                        
+                        // Reset animations for the selected detail
+                        const animatedElements = selectedDetail.querySelectorAll('.fade-in-up');
+                        animatedElements.forEach(el => {
+                            el.style.opacity = '0';
+                            el.style.transform = 'translateY(30px)';
+                            
+                            // Re-trigger animation
+                            setTimeout(() => {
+                                el.style.opacity = '1';
+                                el.style.transform = 'translateY(0)';
+                            }, 100);
+                        });
+                    }
+                });
+            });
+
+            // Add click event to close button
+            btnClose.addEventListener('click', function() {
+                organizationDetails.classList.remove('active');
+                
+                // Hide all organization detail elements
+                organizationDetailElements.forEach(el => {
+                    el.classList.remove('active');
+                });
+            });
+
+            // Close organization details when clicking outside of the content
+            organizationDetails.addEventListener('click', function(event) {
+                if (event.target === organizationDetails) {
+                    organizationDetails.classList.remove('active');
+                    
+                    // Hide all organization detail elements
+                    organizationDetailElements.forEach(el => {
+                        el.classList.remove('active');
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
